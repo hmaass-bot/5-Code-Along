@@ -19,6 +19,7 @@ body {
     background-color: #F7F4EF;
     color: #2F2F2F;
     display:grid;
+    grid-template-columns: 1fr;
 }
 
 header {
@@ -43,9 +44,6 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
 }
 
 nav a {
@@ -82,16 +80,10 @@ section {
     margin-bottom: 2rem;
 }
 
-.card-row {
-    display: flex;
-    gap: 1rem;
-}
-
 .card-row section {
     background-color: white;
     border: 1px solid #E5E5E5;
     padding: 1rem;
-    width: 30%;
 }
 
 img {
@@ -111,4 +103,20 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
+}
+/* ===== Media Query (Medium sizes)=======*/
+@media screen and (min-width:817px){
+        nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+}
+    .card-row {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .card-row section {
+        width: 30%;
+    }
 }
